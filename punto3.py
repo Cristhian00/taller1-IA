@@ -42,14 +42,14 @@ def ingresarDatos(materias: list):
         estudiantes.append(estudiante)
         while True:
             res = input(
-                "¿Desea ingresar los datos de otro estudiante? ¿si/no?: ")
-            if res.lower() == "no":
+                "¿Desea ingresar los datos de otro estudiante? ¿S/N?: ")
+            if res.lower() == "n":
                 ban = False
                 break
-            elif res.lower() == "si":
+            elif res.lower() == "s":
                 break
             else:
-                print("Solo puede ingresar \'si\' ó \'no\'")
+                print("Solo puede ingresar \'S\' ó \'N\'")
                 continue
     return estudiantes
 
